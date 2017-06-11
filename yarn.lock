@@ -1675,6 +1675,10 @@ domutils@^1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
+dropzone@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/dropzone/-/dropzone-5.0.1.tgz#c3651f3b8e890cd693e86f0a1f4d0681f3a015ab"
+
 duplexer@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
@@ -4883,6 +4887,10 @@ to-fast-properties@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
 
+toastr@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/toastr/-/toastr-2.1.2.tgz#fd69066ae7578a5b3357725fc9c7c335e9b681df"
+
 toposort@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/toposort/-/toposort-1.0.3.tgz#f02cd8a74bd8be2fc0e98611c3bacb95a171869c"
@@ -5114,7 +5122,14 @@ vue-template-es2015-compiler@^1.2.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.5.2.tgz#a0a6c50c941d2a4abda963f2f42c337ac450ee95"
 
-vue@^2.2.2:
+vue2-dropzone@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/vue2-dropzone/-/vue2-dropzone-2.3.1.tgz#cf7244e03d3cd67d1b229dc16d0cb907e4b247dc"
+  dependencies:
+    dropzone "^5.0.1"
+    vue "^2.0.0"
+
+vue@^2.0.0, vue@^2.2.2:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.3.4.tgz#5ec3b87a191da8090bbef56b7cfabd4158038171"
 

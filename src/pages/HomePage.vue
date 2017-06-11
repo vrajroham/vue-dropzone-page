@@ -1,48 +1,19 @@
 <template>
-  <div class='product-container'>
-    <div v-for="p in allProducts" class="product">
-      <router-link :to="{name: 'product', params: {id: p.id}}" class="title">{{ p.title }}</router-link>
-      <span class="price">$ {{ p.price }}</span>
-    </div>
+  <div>
+    <img src="../assets/vue-drp1.png" class="img img-responsive logo"  width="50%">
+    <hr>
+    <p><strong>vue2-dropzone</strong> is a lightweight plugin for developers to upload and resize images/files. Component has define different type events for developers and they can control the file flow and do more things they want. </p>
   </div>
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex'
-  export default {
-    mounted () {
-      this.getAllProducts()
-    },
-    computed: {
-      ...mapGetters([
-        'allProducts'
-      ])
-    },
-    methods: {
-      ...mapActions([
-        'getAllProducts'
-
-      ])
-    }
-  }
+  export default {}
 </script>
 
 <style>
-.product {
-  padding: 10px 0px;
-  border-bottom: 1px solid #eee;
-  width: 400px;
-}
-
-.title {
-  color: #312377;
-}
-
-.price {
-  float: right;
-}
-
-.product-container {
-  margin-bottom: 50px;
+.logo{
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 13px;
 }
 </style>

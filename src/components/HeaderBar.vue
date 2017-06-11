@@ -1,29 +1,38 @@
 <template>
-  <div class="menu-links">
-    <router-link to="/">Home</router-link>
-    <router-link to="/cart">Cart ({{ cartCount }})</router-link>
-  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Branding Image -->
+                    <a class="navbar-brand" href="#">
+                        VUE-2 DROPZONE
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav">
+                        &nbsp;
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://github.com/vrajroham" target="_blank"> <i class="fa fa-github fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-
-export default {
-  computed: {
-    // mix the getters into the computed object
-    ...mapGetters([
-      'cartCount'
-
-    ])
-  }
-}
+export default {}
 </script>
 
-<style>
-.menu-links a {
-  display: inline-block;
-  text-decoration: none;
-  color: #555;
-  margin-right: 30px;
-}
-</style>
