@@ -16,7 +16,6 @@ window.toastr.options.hideMethod = 'slideUp'
 window.toastr.options.closeMethod = 'slideUp'
 window.toastr.options.progressBar = true
 window.toastr.options.timeOut = 10000
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

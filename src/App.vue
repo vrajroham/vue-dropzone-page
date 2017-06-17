@@ -13,18 +13,20 @@
             <router-link to="/methods" class="list-group-item"><i class="fa fa-flask"></i> Methods </router-link>  
             <router-link to="/events" class="list-group-item"><i class="fa fa-bullhorn"></i> Events </router-link>  
             <router-link to="/examples" class="list-group-item"><i class="fa fa-clone"></i> Examples </router-link>  
-        </ul>  
+        </ul>
+        <hr>
+        <a href="https://github.com/vrajroham">Documented by vrajroham</a>
       </div>
       <div class="col-md-9">
         <router-view></router-view>
       </div>
     </div>
   </div>
-  <div class="footer">
+  <!-- <div class="footer">
     <div class="container">
       <p class="text-muted text-center"><a href="https://github.com/vrajroham">Designed and Documented with <i class="fa fa-heart"></i> by @vrajroham</a> </p>
     </div>
-  </div>
+  </div> -->
 </div>
 </template>
 
