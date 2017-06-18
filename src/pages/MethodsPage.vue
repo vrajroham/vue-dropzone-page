@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h4 class="title">Methods <i class="fa fa-angle-right"></i></h4>
-		<table class="table table-striped table-hover table-bordered">
+		<table class="table table-striped table-condensed table-hover table-bordered">
 			<thead>
 				<tr>
 					<th>#</th>
@@ -12,7 +12,7 @@
 			<tbody>
 				<tr>
 					<td>1</td>
-					<td>setOption(optionname, value)</td>
+					<td>setOption(<code>optionname, value</code>)</td>
 					<td>Sets the value of one of the dropzone options after initialisation. Handy if you need to pass through a token after the component has initialised.</td>
 				</tr>
 				<tr>
@@ -27,12 +27,12 @@
 				</tr>
 				<tr>
 					<td>4</td>
-					<td>removeFile(file)</td>
+					<td>removeFile(<code>file</code>)</td>
 					<td>Removes a file from the dropzone area.</td>
 				</tr>
 				<tr>
 					<td>5</td>
-					<td>manuallyAddFile(file, fileUrl, callback, crossOrigin)</td>
+					<td>manuallyAddFile(<code>file, fileUrl, callback, crossOrigin</code>)</td>
 					<td>Manually adds a file to the dropzone area. See the dropzone docs for more information.</td>
 				</tr>
 				<tr>
