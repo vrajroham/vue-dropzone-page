@@ -13,9 +13,11 @@ Vue.config.productionTip = false
 window.toastr = require('toastr')
 window.toastr.options.showMethod = 'slideDown'
 window.toastr.options.hideMethod = 'slideUp'
+window.toastr.options.positionClass = 'toast-bottom-left'
 window.toastr.options.closeMethod = 'slideUp'
 window.toastr.options.progressBar = true
-window.toastr.options.timeOut = 10000
+window.toastr.options.timeOut = 15000
+window.toastr.options.extendedTimeOut = 15000
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
