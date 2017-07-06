@@ -1,10 +1,11 @@
 <template>
 	<div>		
     <div class="row">
-      <h4 class="title">Example <i class="fa fa-angle-right"></i></h4>    
+      <h4 class="title">Examples <i class="fa fa-angle-right"></i></h4>    
       <dropzone 
-        id="mydropzone" 
-        url="https://httpbin.org/post" 
+        id="mydropzone"
+        ref="mydropzone" 
+        url="https://httpbin.org/post"
         :dropzone-options="options" 
         :use-custom-dropzone-options="true"
         @vdropzone-file-added="vfileAdded"        
@@ -18,6 +19,8 @@
         @vdropzone-total-upload-progress="vprogress"
         v-bind:use-font-awesome="true"></dropzone>  
     </div>
+    <br>
+    <button class="btn btn-default btn-mini" @click="removeAll">Remove All Files</button>
     <p class="pull-right" v-if="myProgress !== 0 && myProgress != 100">Total Upload Progress : {{myProgress}} %</p>
     <hr>    
     <div class="row">
@@ -94,7 +97,7 @@
 <script>
 	import Dropzone from 'vue2-dropzone'
 export default{
-	  components: {
+components: {
     Dropzone
   },
   data () {
@@ -157,6 +160,9 @@ export default{
       this.progress = true
       this.myProgress = Math.floor(totalProgress)
       // window.toastr.success('', 'Event : vdropzone-sending')
+    },
+    removeAll () {
+      this.$refs.mydropzone.removeAllFiles()
     }
   },
   watch: {
